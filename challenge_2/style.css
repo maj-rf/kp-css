@@ -29,7 +29,8 @@ body {
   padding: 50px 0;
 }
 
-.intro-container {
+.intro-container,
+.container-two {
   width: 80%;
   max-width: 750px;
   margin: 0 auto;
@@ -37,10 +38,4 @@ body {
 
 .intro-text {
   width: 50%;
-}
-
-.container-two {
-  width: 80%;
-  max-width: 750px;
-  margin: 0 auto;
 }
