@@ -14,16 +14,20 @@ h1 {
   font-size: 48px;
 }
 
-.wrapper {
+.hero {
   background: #23424a;
   color: white;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 .container {
-  width: 50%;
-  max-width: 750px;
-  padding: 1rem;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  width: 60%;
 }
 
 p {
