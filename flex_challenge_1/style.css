@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 21px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.hero {
+  background: #23424a;
+  color: white;
+  padding: 3rem 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  width: 60%;
+}
+
+.hero p {
+  margin-bottom: 3rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #23424a;
+  text-transform: uppercase;
+  background-color: #38cfd9;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  letter-spacing: 0.05rem;
+}
+
+.card-container {
+  display: flex;
+  text-align: center;
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+.card h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.content h2 {
+  color: #87629a;
+}
+
+.footer {
+  background-color: #136c72;
+  color: white;
+}
