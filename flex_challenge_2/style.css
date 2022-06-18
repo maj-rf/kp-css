@@ -1,7 +1,11 @@
 /* 
 ////// For this challenge ///////
 
-- All text is in the text.md file
+- All text is in the JS section
+  this pen
+- Use this code for the image
+  (not the same image!)
+  <img src="https://unsplash.it/386/292" alt="">
 
 // Requirements
 1. Refer to the design specs for the
@@ -41,7 +45,12 @@ h1 {
 
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.col {
+  width: 100%;
 }
 
 .hero {
@@ -50,12 +59,13 @@ h1 {
   color: #fff;
 }
 
-.hero__text {
+.hero__text,
+.primary {
   width: 62%;
 }
 
 .hero__img {
-  width: 38%;
+  width: 32%;
   align-self: flex-start;
 }
 
@@ -83,13 +93,17 @@ h1 {
   padding: 3rem 0;
 }
 
-.left {
-  max-width: 62%;
+.primary h2 {
+  color: #87629a;
 }
 
-.right {
-  max-width: 38%;
+.sidebar {
+  width: 32%;
   background-color: #136c72;
   color: white;
   text-align: center;
+}
+
+.card {
+  padding: 1em;
 }
