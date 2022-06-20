@@ -10,11 +10,20 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  /* font-size: 1.3rem; */
 }
 
 h1 {
   margin: 0;
+}
+
+.accent__h {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 600;
+  color: #824936;
+}
+
+.pad {
+  padding: 2rem;
 }
 
 .hero {
@@ -22,18 +31,24 @@ h1 {
   text-align: center;
 }
 
+/* reusable main container*/
 .container {
-  width: 50%;
   max-width: 1128px;
-  min-height: 660px;
-  margin: auto;
+  margin: 0 auto;
 }
 
+/* reusable flex row container */
 .row {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* class to change widths and heights */
+.hero__container {
+  width: 50%;
+  min-height: 660px;
 }
 
 .hero__text {
@@ -44,8 +59,65 @@ h1 {
 }
 
 .hero__heading {
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 900;
   font-size: 60px;
-  color: #824936;
+  margin: 0;
+}
+
+/* class to change widths and heights */
+.secondary__container,
+.pic__container {
+  min-height: 330px;
+  width: 75%;
+}
+
+.secondary__inner {
+  display: flex;
+  font-size: 21px;
+}
+
+.secondary__heading {
+  font-size: 36px;
+}
+
+.pic {
+  background-color: #222c2a;
+  color: white;
+}
+
+/* reusable flex column container */
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic__text {
+  align-self: flex-start;
+}
+
+.pic__heading {
+  color: #f3eed9;
+  font-size: 36px;
+}
+
+.pic__p {
+  max-width: 90%;
+  font-size: 21px;
+}
+
+.second-pic {
+  background-color: #824936;
+  color: white;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+}
+
+.pic__p2 {
+  font-size: 21px;
 }
