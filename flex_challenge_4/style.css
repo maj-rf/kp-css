@@ -13,16 +13,24 @@ body {
   /* font-size: 1.3rem; */
 }
 
-.hero {
-  min-height: 660px;
-
-  background-color: #f3eed9;
+h1 {
+  margin: 0;
 }
 
-.flex-container {
-  display: flex;
+.hero {
+  background-color: #f3eed9;
+  text-align: center;
+}
+
+.container {
+  width: 50%;
   max-width: 1128px;
-  margin: 0 auto;
+  min-height: 660px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -39,4 +47,5 @@ body {
   font-family: 'Playfair Display', sans-serif;
   font-weight: 900;
   font-size: 60px;
+  color: #824936;
 }
