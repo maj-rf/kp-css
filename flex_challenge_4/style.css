@@ -10,38 +10,32 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.1;
 }
 
-h1 {
+h1,
+h2 {
   margin: 0;
-}
-
-.accent__h {
   font-family: 'Playfair Display', sans-serif;
-  font-weight: 600;
-  color: #824936;
+  font-weight: 900;
 }
 
-.pad {
-  padding: 2rem;
+p {
+  margin-top: 1.5rem;
 }
 
 img {
   max-width: 100%;
 }
 
-.hero {
-  background-color: #f3eed9;
-  text-align: center;
-}
-
-/* reusable main container*/
 .container {
+  width: 80%;
   max-width: 1128px;
   margin: 0 auto;
 }
 
-/* reusable flex row container */
 .row {
   display: flex;
   flex-direction: column;
@@ -49,86 +43,74 @@ img {
   align-items: center;
 }
 
-/* class to change widths and heights */
-.hero__container {
-  width: 50%;
-  min-height: 100vh;
+.intro {
+  background-color: #f3eed9;
+  height: 100vh;
+  text-align: center;
+  padding: 0 1.5rem;
 }
 
-.hero__text {
+.intro p {
+  text-transform: uppercase;
+}
+
+.intro__container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__text {
   font-weight: 300;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
-.hero__heading {
+.intro__header {
   font-size: 60px;
   margin: 0;
 }
 
-/* class to change widths and heights */
-.secondary__container,
-.pic__container {
-  min-height: 330px;
-  width: 75%;
+section {
+  padding: 4rem 0;
 }
 
-.secondary__inner {
-  display: flex;
-  font-size: 21px;
-  gap: 1rem;
-}
-
-.secondary__heading {
+.section__header {
   font-size: 36px;
 }
 
-.pic {
-  background-color: #222c2a;
-  color: white;
+.section-two .section__header {
+  text-align: center;
 }
 
-/* reusable flex column container */
-.column {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.dark {
+  color: #824936;
 }
 
-.pic__text {
-  align-self: flex-start;
-}
-
-.pic__heading {
+.light {
   color: #f3eed9;
-  font-size: 36px;
 }
 
-.pic__p {
-  max-width: 90%;
-  font-size: 21px;
+.section-three {
+  background-color: #222c2a;
+  color: #fff;
 }
 
-.second-pic {
+.section-four {
   background-color: #824936;
-  color: white;
+  color: #fff;
 }
 
-.reverse {
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 9rem;
-}
-
-.pic__p2 {
-  font-size: 21px;
-}
-
-@media (max-width: 1080px) {
-  .container {
-    flex-direction: column;
+@media (min-width: 900px) {
+  .row {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .col {
+    width: 100%;
   }
 }

@@ -4,65 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conquering Responsive Layouts</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="hero">
-      <div class="hero__container container row">
-        <p class="hero__text">Lorem Ipsum Sit</p>
-        <h1 class="hero__heading accent__h">
+    <section class="intro">
+      <div class="intro__container container">
+        <p class="intro__text">Lorem ipsum sit</p>
+        <h1 class="intro__header dark">
           Responsive layouts don’t have to be a struggle
         </h1>
       </div>
     </section>
-    <section class="secondary pad">
-      <div class="secondary__container container row">
-        <h2 class="secondary__heading accent__h">Quality Designs</h2>
-        <div class="secondary__inner container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
-            vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu
-            felis. Sociis natoque penatibus et magnis dis.
-          </p>
-          <p>
-            Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
-            amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue
-            quisque egestas. Pellentesque sit amet porttitor eget dolor morbi
-            non.
-          </p>
+
+    <section class="section-two">
+      <div class="container">
+        <h2 class="section__header dark">Quality Design</h2>
+        <div class="row">
+          <div class="col">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
+              vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu
+              felis. Sociis natoque penatibus et magnis dis.
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
+              amet luctus venenatis. Turpis in eu mi bibendum neque egestas
+              congue quisque egestas. Pellentesque sit amet porttitor eget dolor
+              morbi non.
+            </p>
+          </div>
         </div>
       </div>
     </section>
-    <section class="pic pad">
-      <div class="pic__container container column">
-        <div class="pic__text">
-          <h2 class="accent__h pic__heading">Made custom for you</h2>
-          <p class="pic__p">
+
+    <section class="section-three">
+      <div class="container row">
+        <div class="col">
+          <h2 class="section__header light">Made custom for you</h2>
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
           </p>
         </div>
-        <img src="./image-01.jpg" alt="sunset in mountain" />
+        <div class="col">
+          <img src="./image-01.jpg" alt="sunset over mountaine" />
+        </div>
       </div>
     </section>
-    <section class="second-pic pad">
-      <div class="pic__container container column reverse">
-        <div class="pic__text">
-          <h2 class="accent__h pic__heading">Created with care</h2>
-          <p class="pic__p2">
-            Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
-            amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue
-            quisque egestas. Pellentesque sit amet porttitor eget dolor morbi
-            non.
+
+    <section class="section-four">
+      <div class="container row">
+        <div class="col">
+          <img src="./image-01.jpg" alt="sunset over mountaine" />
+        </div>
+        <div class="col">
+          <h2 class="section__header light">Made custom for you</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
           </p>
         </div>
-        <img src="./image-02.jpg" alt="dusk in mountain" />
       </div>
     </section>
   </body>
