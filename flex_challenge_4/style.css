@@ -26,6 +26,10 @@ h1 {
   padding: 2rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 .hero {
   background-color: #f3eed9;
   text-align: center;
@@ -48,7 +52,7 @@ h1 {
 /* class to change widths and heights */
 .hero__container {
   width: 50%;
-  min-height: 660px;
+  min-height: 100vh;
 }
 
 .hero__text {
