@@ -73,6 +73,7 @@ h1 {
 .secondary__inner {
   display: flex;
   font-size: 21px;
+  gap: 1rem;
 }
 
 .secondary__heading {
@@ -120,4 +121,10 @@ h1 {
 
 .pic__p2 {
   font-size: 21px;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    flex-direction: column;
+  }
 }
