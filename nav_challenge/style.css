@@ -150,12 +150,13 @@ header {
   gap: 2rem;
 }
 
-.nav__list > li {
+.nav__item {
   cursor: pointer;
 }
 
-.nav__list > * > a:hover {
-  color: #38cfd9;
+.nav__link:hover,
+.nav__link:focus {
+  filter: brightness(0.7);
 }
 
 .nav__item.button {
@@ -214,6 +215,7 @@ header {
     height: auto;
     margin-top: 0;
     flex-direction: row;
+    position: relative;
   }
 
   .nav__list {
@@ -222,7 +224,7 @@ header {
   }
 
   .nav__list--primary {
-    margin-left: 5rem;
+    margin-left: 2rem;
   }
 
   .row {
