@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 *,
 *::before,
 *::after {
@@ -6,12 +9,29 @@
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
+  color: #fff;
+  min-height: 100vh;
 }
 
 img {
   max-width: 100%;
+}
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+.accent {
+  color: #a59678;
 }
 
 .container {
@@ -20,12 +40,16 @@ img {
   margin: 0 auto;
   /* added for nav-toggle positioning */
   position: relative;
+  padding: 0 1.5rem;
 }
 
 header {
   background-color: #2e323f;
   padding: 0.5em 0;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 .nav-toggle {
@@ -36,7 +60,6 @@ header {
   padding: 0em;
   border-radius: 50%;
   background: #072a2d;
-  color: white;
   transition: opacity 250ms ease;
 
   position: absolute;
@@ -107,7 +130,7 @@ header {
 
 .nav__link {
   text-decoration: none;
-  color: #fff;
+  color: inherit;
 }
 
 .nav__link:hover,
@@ -115,9 +138,9 @@ header {
   filter: brightness(0.7);
 }
 
-.nav__item.button {
+.button {
   background-color: #a59678;
-  padding: 0.2rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 2rem;
 }
 
@@ -129,7 +152,27 @@ header {
 
 .logo {
   height: 30px;
-  padding-left: 1rem;
+}
+
+.hero {
+  background-color: #3b4050;
+  padding: 4rem 0;
+}
+
+.hero__header {
+  font-size: 90px;
+}
+
+.hero__para {
+  font-size: 24px;
+}
+
+.hero__button {
+  font-size: 24px;
+  outline: none;
+  border: none;
+  color: inherit;
+  text-transform: uppercase;
 }
 
 @media (min-width: 800px) {
@@ -157,5 +200,18 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__para {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 }
