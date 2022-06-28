@@ -40,7 +40,6 @@ h2 {
   margin: 0 auto;
   /* added for nav-toggle positioning */
   position: relative;
-  padding: 0 1.5rem;
 }
 
 header {
@@ -154,9 +153,12 @@ header {
   height: 30px;
 }
 
+section {
+  padding: 5rem 0;
+}
+
 .hero {
   background-color: #3b4050;
-  padding: 4rem 0;
 }
 
 .hero__header {
@@ -173,6 +175,26 @@ header {
   border: none;
   color: inherit;
   text-transform: uppercase;
+}
+
+.second-section {
+  background-color: rgb(234, 234, 234);
+  text-align: center;
+}
+
+.second-section h2 {
+  font-size: 30px;
+}
+
+.second-section p {
+  font-size: 18px;
+  color: #3b4050;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.second-section .col {
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 800px) {
@@ -199,19 +221,18 @@ header {
   .row {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-  }
-
-  .hero {
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
 
-  .hero__para {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+  .hero__text {
+    align-items: flex-end;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .second-section .col {
+    margin-bottom: 0;
   }
 }
