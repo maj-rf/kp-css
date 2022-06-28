@@ -129,6 +129,7 @@ header {
 
 .logo {
   height: 30px;
+  padding-left: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -143,6 +144,8 @@ header {
     margin-top: 0;
     flex-direction: row;
     position: relative;
+    gap: 0;
+    width: 70%;
   }
 
   .nav__list {
@@ -150,7 +153,9 @@ header {
     width: 100%;
   }
 
-  .nav__list--primary {
-    margin-left: 2rem;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
