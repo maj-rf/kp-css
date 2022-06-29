@@ -25,6 +25,13 @@ h2 {
   margin: 0;
 }
 
+ul,
+li {
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
 .oswald {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
@@ -223,6 +230,20 @@ section {
   font-size: 18px;
 }
 
+.cta {
+  background-color: #3b4050;
+  font-size: 16px;
+}
+
+.cta-header {
+  font-size: 40px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 21px;
+}
+
 @media (min-width: 800px) {
   .nav-toggle {
     display: none;
@@ -271,6 +292,28 @@ section {
 
   .right {
     width: 32%;
+  }
+
+  .cta > .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta > .container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .cta-links {
+    gap: 1rem;
+  }
+  .about {
+    width: 80%;
+  }
+
+  .links {
+    width: 40%;
   }
 }
 
