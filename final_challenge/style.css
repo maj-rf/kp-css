@@ -197,6 +197,32 @@ section {
   margin-bottom: 2rem;
 }
 
+.third-section h2 {
+  font-size: 36px;
+}
+
+.left-p {
+  color: #3b4050;
+  font-size: 21px;
+}
+
+.card {
+  background-color: #3b4050;
+  color: #fff;
+  padding: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.text {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.right-p {
+  font-size: 18px;
+}
+
 @media (min-width: 800px) {
   .nav-toggle {
     display: none;
@@ -221,7 +247,10 @@ section {
   .row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+  }
+
+  .logo {
+    align-self: center;
   }
 
   .hero__text {
@@ -234,5 +263,35 @@ section {
 
   .second-section .col {
     margin-bottom: 0;
+  }
+
+  .left {
+    width: 62%;
+  }
+
+  .right {
+    width: 32%;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  .right {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .third-section > .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    width: 100%;
   }
 }
